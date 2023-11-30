@@ -1,10 +1,11 @@
 import { PiBriefcaseDuotone } from 'react-icons/pi';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { companies } from '@/types/companies';
 import type IExperience from '@/types/experience';
 
 export const Experience = () => {
   const t = useTranslations('experience');
+  const locale = useLocale();
 
   const experience = [] as IExperience[];
 
@@ -21,7 +22,7 @@ export const Experience = () => {
   return (
     <section className='w-full'>
       <header className='mb-6 flex items-center gap-3 text-2xl font-bold text-indigo-400 dark:text-gray-100'>
-        <h2>Experience</h2>
+        {locale === 'es' ? <h2>Experiencia</h2> : <h2>Experience</h2>}
         <PiBriefcaseDuotone className='text-4xl' />
       </header>
       <div className='flex flex-col gap-10'>

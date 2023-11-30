@@ -3,7 +3,7 @@ import { PiShootingStar } from 'react-icons/pi';
 import { FaFileDownload } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
 
-import ProfileImage from '../assets/LOsioChico.jpg';
+import ProfileImage from '@/assets/LOsioChico.jpg';
 import { ToolTip } from '@/components/toolTip';
 
 export const Profile = () => {

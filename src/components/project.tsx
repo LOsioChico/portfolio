@@ -35,7 +35,7 @@ export const Project: React.FC<ProjectProps> = ({
         <h3 className='text-3xl font-bold text-slate-800 dark:text-white'>
           {title}
         </h3>
-        <p className='text-lg text-slate-600 dark:text-slate-300'>
+        <p className='line-clamp-2 text-lg text-slate-600 dark:text-slate-300'>
           {description}
         </p>
 

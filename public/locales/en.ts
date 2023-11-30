@@ -31,6 +31,13 @@ const en: Locale = {
       end: 'Oct 2023',
     },
   },
+  projects: {
+    UVA: {
+      title: 'UVA',
+      description:
+        'UVA is a platform that connects developers with exciting projects.',
+    },
+  },
 };
 
 export default en;

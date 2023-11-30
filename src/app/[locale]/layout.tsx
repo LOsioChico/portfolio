@@ -3,6 +3,7 @@ import '../../styles/globals.css';
 import { NavBar } from '@/components/containers/NavBar';
 import { notFound } from 'next/navigation';
 import { locales } from '@/types/locale';
+import { Providers } from '@/providers/Providers';
 
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -19,10 +20,12 @@ export default function LocaleLayout({
   if (!locales.includes(locale as any)) notFound();
 
   return (
-    <html lang={locale} className='dark'>
+    <html lang={locale}>
       <body className='bg-white dark:bg-gray-800'>
-        <NavBar />
-        {children}
+        <Providers>
+          <NavBar />
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { PiShootingStar } from 'react-icons/pi';
 import { FaFileDownload } from 'react-icons/fa';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 import ProfileImage from '@/assets/LOsioChico.jpg';
 import { ToolTip } from '@/components/toolTip';
@@ -9,6 +9,7 @@ import { ProfileIntersection } from './ProfileIntersection';
 
 export const Profile = () => {
   const t = useTranslations('profile');
+  const locale = useLocale();
 
   return (
     <ProfileIntersection>
@@ -26,7 +27,9 @@ export const Profile = () => {
             </p>
           </div>
           <div className='flex gap-3'>
-            <ToolTip tooltip='Looking For Job'>
+            <ToolTip
+              tooltip={locale === 'es' ? 'Buscando Trabajo' : 'Looking For Job'}
+            >
               <div className='grid place-items-center rounded-xl bg-emerald-200 p-2 dark:bg-emerald-500'>
                 <PiShootingStar className='text-xl text-emerald-700 dark:text-white' />
               </div>

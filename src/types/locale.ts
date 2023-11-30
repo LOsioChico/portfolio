@@ -1,5 +1,8 @@
 interface Locale {
-  description: string;
+  profile: {
+    author: string;
+    description: string;
+  };
 }
 
 export default Locale;

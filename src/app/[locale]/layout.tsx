@@ -6,7 +6,7 @@ import { locales } from '@/types/locale';
 import { Providers } from '@/providers/Providers';
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
+  title: 'LOsioChico Portfolio',
   description: 'My portfolio',
 };
 

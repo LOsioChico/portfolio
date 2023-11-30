@@ -16,4 +16,6 @@ interface Locale {
   };
 }
 
+export const locales = ['en', 'es'];
+
 export default Locale;

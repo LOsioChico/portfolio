@@ -2,8 +2,7 @@ import type { Metadata } from 'next';
 import '../../styles/globals.css';
 import { NavBar } from '@/components/navBar';
 import { notFound } from 'next/navigation';
-
-const locales = ['en', 'de'];
+import { locales } from '@/types/locale';
 
 export const metadata: Metadata = {
   title: 'Portfolio',

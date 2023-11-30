@@ -1,4 +1,5 @@
 import { type Companies } from './companies';
+import { type Projects } from './projects';
 
 interface Locale {
   profile: {
@@ -12,6 +13,12 @@ interface Locale {
       description: string;
       start: string;
       end: string;
+    };
+  };
+  projects: {
+    [key in Projects[number]]: {
+      title: string;
+      description: string;
     };
   };
 }

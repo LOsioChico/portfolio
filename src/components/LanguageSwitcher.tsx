@@ -15,7 +15,7 @@ export const LanguageSwitcher = () => {
       className='flex items-center justify-center gap-1 text-lg font-semibold text-gray-900 dark:text-gray-100'
       href={`/${locales[nextLocaleIndex]}`}
     >
-      <TbWorld className='text-2xl text-white' />
+      <TbWorld className='text-2xl text-gray-900 dark:text-white' />
       {locale.toUpperCase()}
     </Link>
   );

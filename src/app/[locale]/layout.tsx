@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import '../../styles/globals.css';
-import { NavBar } from '@/components/navBar';
+import { NavBar } from '@/components/containers/NavBar';
 import { notFound } from 'next/navigation';
 import { locales } from '@/types/locale';
 

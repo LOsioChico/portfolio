@@ -12,13 +12,7 @@ export const Profile = () => {
   return (
     <section className='flex flex-col items-center gap-5 sm:flex-row'>
       <div className='relative h-44 w-44 overflow-hidden rounded-full border-8 border-white bg-indigo-100 shadow-lg dark:border-gray-900/80 dark:bg-gray-700/60'>
-        <Image
-          src={ProfileImage}
-          layout='fill'
-          objectFit='cover'
-          alt='Profile Picture'
-          draggable='false'
-        />
+        <Image src={ProfileImage} alt='Profile Picture' draggable='false' />
       </div>
       <div className='flex flex-col items-center gap-3 sm:items-start'>
         <div className='items-left flex flex-col gap-2'>

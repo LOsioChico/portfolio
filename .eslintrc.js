@@ -19,5 +19,6 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     'react/prop-types': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
   },
 };

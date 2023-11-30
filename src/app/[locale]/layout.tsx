@@ -20,7 +20,7 @@ export default function LocaleLayout({
   if (!locales.includes(locale as any)) notFound();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className='bg-white dark:bg-gray-800'>
         <Providers>
           <NavBar />

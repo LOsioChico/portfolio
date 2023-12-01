@@ -38,6 +38,10 @@ const es: Locale = {
         'UVA es una plataforma que conecta a los desarrolladores con proyectos emocionantes.',
     },
   },
+  email: {
+    send: 'Envíame un correo electrónico',
+    copy: 'Copiar correo electrónico',
+  },
 };
 
 export default es;

@@ -21,6 +21,10 @@ interface Locale {
       description: string;
     };
   };
+  email: {
+    send: string;
+    copy: string;
+  };
 }
 
 export const locales = ['en', 'es'];

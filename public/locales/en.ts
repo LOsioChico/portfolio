@@ -38,6 +38,10 @@ const en: Locale = {
         'UVA is a platform that connects developers with exciting projects.',
     },
   },
+  email: {
+    send: 'Send me email',
+    copy: 'Copy email',
+  },
 };
 
 export default en;

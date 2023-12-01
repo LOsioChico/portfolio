@@ -1,4 +1,5 @@
 import { AnimatedContainer } from '@/components/containers/AnimatedContainer';
+import { Email } from '@/components/containers/Email';
 import { Experience } from '@/components/containers/Experience';
 import { Profile } from '@/components/containers/Profile';
 import { Projects } from '@/components/containers/Projects';
@@ -14,6 +15,8 @@ export default function Home() {
       <Experience />
       <hr className='rounded-md border border-gray-300 dark:border-gray-600' />
       <Projects />
+      <hr className='rounded-md border border-gray-300 dark:border-gray-600' />
+      <Email />
     </AnimatedContainer>
   );
 }

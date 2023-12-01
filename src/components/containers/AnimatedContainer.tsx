@@ -27,7 +27,7 @@ export const AnimatedContainer: React.FC<AnimatedContainerProps> = ({
           currentIndex++;
           animateChildren();
         }
-      }, 200);
+      }, delay);
     };
 
     animateChildren();

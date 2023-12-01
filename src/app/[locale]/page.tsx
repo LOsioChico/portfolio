@@ -6,7 +6,7 @@ import { Socials } from '@/components/containers/Socials';
 
 export default function Home() {
   return (
-    <AnimatedContainer>
+    <AnimatedContainer delay={300}>
       <Profile />
       <div />
       <Socials />

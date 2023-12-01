@@ -41,9 +41,9 @@ export const AnimatedContainer: React.FC<AnimatedContainerProps> = ({
     <main className='mx-auto mb-5 flex max-w-3xl flex-col gap-16 px-5'>
       {currentChildren.map((child, index) => (
         <div
-          className={`transition-all duration-500 ${
+          className={`transition-all duration-1000 ${
             currentChildren.length === index + 1
-              ? 'translate-y-10 transform opacity-0'
+              ? 'translate-y-20 transform opacity-0'
               : 'transform-none opacity-100'
           }`}
           key={index}

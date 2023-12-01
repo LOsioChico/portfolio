@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { PiShootingStar } from 'react-icons/pi';
-import { FaFileDownload } from 'react-icons/fa';
 import { useTranslations, useLocale } from 'next-intl';
 
 import ProfileImage from '@/assets/LOsioChico.jpg';

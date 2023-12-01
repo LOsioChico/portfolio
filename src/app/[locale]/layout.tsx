@@ -21,7 +21,7 @@ export default function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className='bg-white dark:bg-gray-800'>
+      <body className='no-scrollbar bg-white dark:bg-gray-800'>
         <Providers>
           <NavBar />
           {children}

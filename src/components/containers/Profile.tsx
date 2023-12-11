@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import ProfileImage from '@/assets/LOsioChico.jpg';
 import { ToolTip } from '@/components/toolTip';
 import { ProfileIntersection } from './ProfileIntersection';
+import { ResumeButton } from '../ResumeButton';
 
 export const Profile = () => {
   const t = useTranslations('profile');
@@ -33,10 +34,8 @@ export const Profile = () => {
                 <PiShootingStar className='text-xl text-emerald-700 dark:text-white' />
               </div>
             </ToolTip>
-            {/* <div className='flex items-center gap-3 rounded-lg bg-indigo-100 px-4 py-2 text-sm font-semibold text-indigo-500 hover:bg-opacity-80 dark:bg-indigo-500 dark:text-indigo-100 hover:dark:bg-opacity-90'>
-              <FaFileDownload className='text-indigo-500 dark:text-indigo-100' />
-              Resume
-            </div> */}
+
+            <ResumeButton locale={locale} />
           </div>
         </div>
       </section>
